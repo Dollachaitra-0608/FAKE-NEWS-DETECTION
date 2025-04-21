@@ -8,9 +8,9 @@ from sklearn.metrics import accuracy_score
 
 nltk.download('stopwords')
 
-# Load fake and real news
-df_fake = pd.read_csv('Fake.csv')
-df_real = pd.read_csv('True.csv')
+# Load fake and real news (updated paths to 'data' folder)
+df_fake = pd.read_csv('data/Fake.csv')
+df_real = pd.read_csv('data/True.csv')
 
 # Add labels
 df_fake['label'] = 0  # FAKE
